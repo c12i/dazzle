@@ -11,6 +11,10 @@ body{
     border-style: none;
 }
 
+.lightbox{
+    cursor: zoom-in;
+}
+
 /* GALLERY */
 .gallery-block {
     padding-bottom: 60px;
