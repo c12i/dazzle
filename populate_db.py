@@ -7,7 +7,7 @@ django.setup()
 
 #Population Scripts
 import random
-from gallery.models import Category
+from gallery.models import Category, Location
 from faker import Faker
 
 fake = Faker()
@@ -24,8 +24,18 @@ def add_category():
         
     return categ
 
+def populate_locations(N=10):
+    for entry in range(N):
+        fake_city = fake.city()
+        fake_country = fake.country()
+
+        new_location = Location.objects.get_or_create(city = fake_city, 
+                                              country = fake_country)[0]
+        new_location.save()
+
 
 if __name__ == "__main__":
     print("populating database...")
-    add_category()
+    # add_category()
+    populate_locations(20)
     print("Done")
