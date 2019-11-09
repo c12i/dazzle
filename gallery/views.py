@@ -5,3 +5,6 @@ from gallery.models import Photo
 def index(request):
     photos = Photo.show_all_photos()
     return render(request, "gallery/index.html", context={"photos":photos})
+
+def search(request):
+    pass
