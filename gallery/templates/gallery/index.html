@@ -53,6 +53,13 @@
                     <span class="description">
                         <span class="description-heading">{{photo.name}}</span>
                         <span class="description-body">{{photo.description}}</span>
+                        <div style="display: flex;">
+                            <p class="description-body"><span class="badge">
+                                <i class="fas fa-map-marker-alt"></i> {{photo.location.city}}, {{photo.location.country}}
+                            </span></p>
+                            <span id="photo{{photo.id}}" hidden>http://127.0.0.1:8000{{photo.image.url}}</span>
+                            <button onclick="copyToClipboard('photo{{photo.id}}')" class="btn no-border text-white"><i class="far fa-copy"></i></button>
+                        </div>  
                     </span>
                 </a>
             </div>

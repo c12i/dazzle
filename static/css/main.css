@@ -19,6 +19,12 @@ body{
     cursor: zoom-in;
 }
 
+span .badge{
+    color: #fff;
+    background-color: #333;
+    opacity: 0.79;
+}
+
 hr.style-one {
     border: 0;
     height: 1px;

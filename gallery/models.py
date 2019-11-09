@@ -1,4 +1,5 @@
 from django.db import models
+import pyperclip
 
 # Create your models here.
 
@@ -62,7 +63,10 @@ class Photo(models.Model):
         A method to save the photo
         """
         return self.save()
-    
+
+    def copy(self):
+        pyperclip.copy(self.image.url)
+  
     @classmethod
     def show_all_photos(cls):
         """
