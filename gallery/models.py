@@ -6,13 +6,14 @@ class Location(models.Model):
     """
     A class for geographic loactions where a Photo could be taken
     """
-    name = models.CharField(max_length=244)
+    city = models.CharField(max_length=244)
+    country = models.CharField(max_length=244)
 
     def __str__(self):
         """
         String representation
         """
-        return self.name
+        return self.city
 
     def save_location(self):
         """
