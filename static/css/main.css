@@ -1,9 +1,14 @@
 body{
     color: #333;
+    font-family: 'Lateef', cursive;
 }
 
-.no-radis{
+.no-radius{
     border-radius: 0;
+}
+
+.no-border{
+    border-style: none;
 }
 
 /* GALLERY */
@@ -54,7 +59,7 @@ body{
     opacity: 1;
     color: #fff;
     transition: 0.8s ease;
-    text-align: center;
+    /* text-align: center; */
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
 }
@@ -93,4 +98,14 @@ body{
 
 #nav{
     background-color: rgba(255, 255, 255, 0.39);
+}
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.head{
+    font-family: 'Megrim', cursive; 
 }
