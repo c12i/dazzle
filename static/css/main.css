@@ -37,6 +37,7 @@ body{
 
 .gallery-block.compact-gallery .item .image {
     transition: 0.8s ease;
+    /* transform: scale(2.0); */
 }
 
 .gallery-block.compact-gallery .item .info {
@@ -75,7 +76,7 @@ body{
     font-weight: 300;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 368px) {
 
     .gallery-block.compact-gallery .item .description {
         opacity: 0;
@@ -86,7 +87,7 @@ body{
     }
 
     .gallery-block .zoom-on-hover:hover .image {
-        transform: scale(1.3);
+        transform: scale(1.2);
         opacity: 0.7;
     }
 }

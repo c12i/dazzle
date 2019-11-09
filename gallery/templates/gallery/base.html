@@ -19,6 +19,12 @@
 </head>
 
 <body>
+    <div class="alert alert-dark alert-dismissible fade show no-radius" role="alert">
+        <strong>Note:</strong> clicking on an image will coopy its url to your clipboard.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
     {%include "navbar.html"%}
     {%block content%}
     {%endblock%}
@@ -44,7 +50,13 @@
                 1000: {
                     items: 5
                 }
-            }
+            },
+            autoHeight: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            dots: true,
+            nav: false,
+            center: false,
         })
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
