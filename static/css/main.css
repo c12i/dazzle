@@ -3,6 +3,10 @@ body{
     font-family: 'Lateef', cursive;
 }
 
+.list-inline-item > a{
+    color: #333;
+}
+
 .no-radius{
     border-radius: 0;
 }
