@@ -13,7 +13,7 @@ class Location(models.Model):
         """
         String representation
         """
-        return self.city
+        return f"{self.city}, {self.country}"
 
     def save_location(self):
         """
