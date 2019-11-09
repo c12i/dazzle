@@ -2,42 +2,11 @@
 
 {%block content%}
 <div class="owl-carousel owl-theme">
+    {%for photo in photos%}
     <div class="item">
-        <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=251">
+        <img class="img-fluid image" src="{{photo.image.url}}">
     </div>
-    <div class="item">
-        <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=252">
-    </div>
-    <div class="item">
-        <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=253">
-    </div>
-    <div class="item">
-        <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=254">
-    </div>
-    <div class="item">
-        <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=255">
-    </div>
-    <div class="item">
-        <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=256">
-    </div>
-    <div class="item">
-        <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=257">
-    </div>
-    <div class="item">
-        <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=258">
-    </div>
-    <div class="item">
-        <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=259">
-    </div>
-    <div class="item">
-        <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=260">
-    </div>
-    <div class="item">
-        <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=261">
-    </div>
-    <div class="item">
-        <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=263">
-    </div>
+    {%endfor%}
 </div>
 
 <!-- IMAGE SECTION -->
