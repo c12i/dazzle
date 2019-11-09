@@ -49,7 +49,7 @@ class Photo(models.Model):
     location = models.ForeignKey(Location)
     categories = models.ManyToManyField(Category)
     post_date = models.DateTimeField(auto_now_add=True)
-    image = models.ImageField(upload_to="articles/")
+    image = models.ImageField(upload_to="images/")
 
     def __str__(self):
         """
