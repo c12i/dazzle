@@ -39,22 +39,25 @@
         <img class="img-fluid image" src="https://unsplash.it/1200/768.jpg?image=263">
     </div>
 </div>
-    <!-- IMAGE SECTION -->
-    <section class="gallery-block compact-gallery">
-        <div class="container">
-            <div class="row no-gutters">
-                {%for photo in photos%}
-                <div class="col-md-6 col-lg-4 item zoom-on-hover">
-                    <a class="lightbox" href="{{photo.image.url}}" data-caption="{{photo.name}}">
-                        <img class="img-fluid image" src="{{photo.image.url}}">
-                        <span class="description">
-                            <span class="description-heading">{{photo.name}}</span>
-                            <span class="description-body">{{photo.description}}</span>
-                        </span>
-                    </a>
-                </div>
-                {%endfor%}
+
+
+<!-- IMAGE SECTION -->
+
+<section class="gallery-block compact-gallery">
+    <div class="container">
+        <div class="row no-gutters">
+            {%for photo in photos%}
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a class="lightbox" href="{{photo.image.url}}" data-caption="{{photo.name}}">
+                    <img class="img-fluid image" src="{{photo.image.url}}">
+                    <span class="description">
+                        <span class="description-heading">{{photo.name}}</span>
+                        <span class="description-body">{{photo.description}}</span>
+                    </span>
+                </a>
             </div>
+            {%endfor%}
         </div>
-    </section>
-    {%endblock%}
+    </div>
+</section>
+{%endblock%}
