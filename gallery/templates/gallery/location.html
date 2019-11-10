@@ -1,0 +1,60 @@
+{%extends "gallery/base.html"%}
+
+{%block content%}
+
+<div class="container">
+    {%if results == 1%}
+    <h2 class="text-center">{{results}} photo taken in {{location.city}}, {{location.country}}</h2>
+    {%else%}
+    <h2 class="text-center">{{results}} photos taken in {{location.city}}, {{location.country}}</h2>
+    {%endif%}
+    <hr class="style-one">
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <h2>Locations</h2>
+            <div class="list-group">
+                {%for location in locations%}
+                <a href="{% url 'location' location.id%}"
+                    class="list-group-item list-group-item-action locale">{{location.city}}, {{location.country}}</a>
+                {%endfor%}
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <section class="gallery-block compact-gallery">
+                <div class="container">
+                    <div class="row no-gutters">
+                        {%for photo in photos%}
+                        <div class="col-md-6 item zoom-on-hover">
+                            <a class="lightbox" href="{{photo.image.url}}" data-caption="{{photo.name}}">
+                                <img class="img-fluid image" src="{{photo.image.url}}">
+                                <span class="description">
+                                    <span class="description-heading">{{photo.name}}</span>
+                                    <span class="description-body">{{photo.description}}</span>
+                                    <div style="display: flex;">
+                                        <p class="description-body"><span class="badge">
+                                                <i class="fas fa-map-marker-alt"></i> {{photo.location.city}},
+                                                {{photo.location.country}}
+                                            </span></p>
+                                        <span id="photo{{photo.id}}"
+                                            hidden>http://127.0.0.1:8000{{photo.image.url}}</span>
+                                        <button onclick="copyToClipboard('photo{{photo.id}}')"
+                                            class="btn no-border text-white"><i class="far fa-copy"></i></button>
+                                    </div>
+                                    <small style="font-size: 12px; float:right" class="ml-45"><i
+                                            class="far fa-clock"></i>
+                                        {{photo.post_date | timesince}} ago</small>
+                                </span>
+                            </a>
+                        </div>
+                        {%endfor%}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+{%endblock%}

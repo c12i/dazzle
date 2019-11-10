@@ -28,6 +28,12 @@ def browse(request):
                                                            "locations":locations})
 
 def location_filter(request, id):
-    photos = Location.find_photos_by_location(id)
+    photos = Photo.objects.filter(location__id = id)
+    results = len(photos)
+    location = Location.objects.get(id = id)
+    locations = Location.objects.all()
 
-    return render(request, "gallery/location.html", context={"photos":photos})
+    return render(request, "gallery/location.html", context={"photos":photos,
+                                                             "results":results,
+                                                             "location":location,
+                                                             "locations":locations})
