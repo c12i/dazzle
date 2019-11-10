@@ -65,8 +65,10 @@ class Photo(models.Model):
         """
         return self.save()
 
-    def copy(self):
-        pyperclip.copy(self.image.url)
+    @classmethod
+    def copy_url(cls, id):
+        photo = cls.objects.get(id = id)
+        pyperclip.copy(photo.image.url)
   
     @classmethod
     def show_all_photos(cls):
@@ -87,7 +89,6 @@ class Photo(models.Model):
         return cls.objects.get(id = random_id)
 
 
-    
     @classmethod
     def delete_photo(cls, id):
         """
