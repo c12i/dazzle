@@ -1,14 +1,12 @@
 {%extends "gallery/base.html"%}
 
 {%block content%}
-<div class="jumbotron" style="height: 80px; padding-top:20px">
-    <div class="container">
-        {%if results == 1%}
-        <h1>{{results}} result for {{message}}</h1>
-        {%else%}
-        <h1>{{results}} results for {{message}}</h1>
-        {%endif%}
-    </div>
+<div class="container">
+    {%if results == 1%}
+    <h2>{{results}} result for {{message}}</h2>
+    {%else%}
+    <h2>{{results}} results for {{message}}</h2>
+    {%endif%}
 </div>
 
 <section class="gallery-block compact-gallery">
