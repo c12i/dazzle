@@ -19,6 +19,14 @@ body{
     cursor: zoom-in;
 }
 
+a .links{
+    color: #333;
+}
+
+div .social{
+    display: flex;
+}
+
 span .badge{
     color: #fff;
     background-color: #333;

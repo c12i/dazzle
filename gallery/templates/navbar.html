@@ -1,31 +1,53 @@
-<hr class="style-one" style="width: 200px;">
-<h1 class="text-center my-2 head">DAZZLE</h1>
-
-<nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top shadow-sm p-3 mb-5 bg-white rounded no-radius"
-    data-toggle="affix">
-    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-        <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarsExample11"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center" id="navbarsExample11">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Browse</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2 no-radius" type="search" placeholder="Search" aria-label="Search"
-                    name="search">
-                <button class="btn btn-outline-dark my-2 my-sm-0 no-radius" type="submit"><i
-                        class="fas fa-search"></i></button>
-            </form>
+<header>
+    <div class="collapse sticky-top" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4>About</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Aspernatur est aperiam tempora amet 
+                        voluptatem tenetur voluptates accusantium atque numquam, 
+                        illum deserunt fuga doloribus sunt sapiente, incidunt, nobis expedita! A, libero?</p>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 no-radius" type="search" placeholder="Search"
+                            aria-label="Search" name="search">
+                        <button class="btn btn-outline-dark my-2 my-sm-0 no-radius" type="submit"><i
+                                class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="">Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a style="color: #333;" class="links" href="#">Browse Photos</a></li>
+                        <br>
+                        <li>
+                            <div class="social">
+                                <a style="color: #333;" href="" class="links mr-2"><i class="fab fa-instagram fa-lg"></i></a>
+                                <a style="color: #333;" href="" class="links mr-2"><i class="fab fa-twitter fa-lg"></i></a>
+                                <a style="color: #333;" href="" class="links mr-2"><i class="fab fa-github fa-lg"></i></a>
+                                <a style="color: #333;" href="" class="links mr-2"><i class="fab fa-flickr fa-lg"></i></a>
+                                <a style="color: #333;" href="" class="links mr-2"><i class="fab fa-facebook fa-lg"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
+    <div class="navbar navbar-light bg-light sticky-top shadow-sm p-3 mb-5 bg-white rounded no-radius">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="mx-auto navbar-brand d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
+                    viewBox="0 0 24 24" focusable="false">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                    <circle cx="12" cy="13" r="4" /></svg>
+                <h1 class="text-center my-2 head">DAZZLE</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
