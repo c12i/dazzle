@@ -36,6 +36,11 @@ button:focus {
     cursor: zoom-in;
 }
 
+.locale:hover{
+    color: #fff;
+    background-color: #333;
+}
+
 a .links{
     color: #333;
 }

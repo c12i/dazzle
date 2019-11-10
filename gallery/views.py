@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from gallery.models import Photo
+from django.shortcuts import render, redirect
+from gallery.models import Photo, Location
 
 # Create your views here.
 def index(request):
@@ -20,3 +20,14 @@ def search(request):
     else:
         message = "You have not searched for any photo"
         return render(request, "gallery/search.html", context={"message":message})
+
+def browse(request):
+    photos = Photo.show_all_photos()
+    locations = Location.objects.all()
+    return render(request, "gallery/browse.html", context={"photos":photos,
+                                                           "locations":locations})
+
+def location_filter(request, id):
+    photos = Location.find_photos_by_location(id)
+
+    return render(request, "gallery/location.html", context={"photos":photos})

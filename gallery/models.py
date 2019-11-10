@@ -23,6 +23,10 @@ class Location(models.Model):
         """
         return self.save()
 
+    @classmethod
+    def find_photos_by_location(cls, id):
+        return cls.objects.filter(photo__location__id = id)
+
 class Category(models.Model):
     """
     A class for the category the Photo falls under
@@ -114,4 +118,4 @@ class Photo(models.Model):
         """
         A method to filter all photos based on the location in which they were taken
         """
-        return cls.objects.filter(location = location)
+        return cls.objects.filter(location__city = location)
