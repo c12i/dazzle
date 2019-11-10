@@ -77,7 +77,6 @@ class Photo(models.Model):
         """
         return cls.objects.order_by("post_date")[::-1]
 
-    
     @classmethod
     def show_random_photo(cls):
         """
@@ -88,7 +87,6 @@ class Photo(models.Model):
 
         return cls.objects.get(id = random_id)
 
-
     @classmethod
     def delete_photo(cls, id):
         """
@@ -96,7 +94,6 @@ class Photo(models.Model):
         """
 
         return cls.objects.filter(id = id).delete()
-
 
     @classmethod
     def get_photo_by_id(cls, id):
