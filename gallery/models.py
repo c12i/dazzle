@@ -115,8 +115,3 @@ class Photo(models.Model):
         A method to filter all photos based on the location in which they were taken
         """
         return cls.objects.filter(location = location)
-
-
-
-
-
