@@ -1,3 +1,14 @@
+$(function () {
+    $(window).scroll(function () {              
+        $(".backtop").show(4000)
+    })
+
+    $(".backtop").click(function(){                  
+        $(this).hide()
+    })
+})
+
+
 // copy image url to clipboard function
 function copyToClipboard(id) {
     var grabText = document.getElementById(id);

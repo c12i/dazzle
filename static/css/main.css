@@ -44,6 +44,8 @@ span .badge{
    bottom: 40px;
    right: 20px;
    opacity: 0.5;
+   display: none;
+   cursor: pointer;
 
    text-decoration: none;
    text-align: center;
