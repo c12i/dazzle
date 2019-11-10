@@ -56,7 +56,8 @@
                             </span></p>
                             <span id="photo{{photo.id}}" hidden>http://127.0.0.1:8000{{photo.image.url}}</span>
                             <button onclick="copyToClipboard('photo{{photo.id}}')" class="btn no-border text-white"><i class="far fa-copy"></i></button>
-                        </div>  
+                        </div>
+                        <small style="font-size: 12px; float:right" class="ml-45"><i class="far fa-clock"></i> {{photo.post_date | timesince}} ago</small>  
                     </span>
                 </a>
             </div>
