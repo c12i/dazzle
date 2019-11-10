@@ -40,7 +40,8 @@ class PhotoTestClass(TestCase):
         self.assertFalse(len(photos) > 0)
 
     def test_filter_by_location(self):
-        pass
+        photos = Photo.filter_by_location(self.photo.id)
+        self.assertTrue(len(photos) > 0)
 
 
 class LocationTestClass(TestCase):

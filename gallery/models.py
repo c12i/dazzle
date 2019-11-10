@@ -114,8 +114,8 @@ class Photo(models.Model):
         return cls.objects.filter(categories__name__icontains = search)
 
     @classmethod
-    def filter_by_location(cls, location):
+    def filter_by_location(cls, id):
         """
         A method to filter all photos based on the location in which they were taken
         """
-        return cls.objects.filter(location__city = location)
+        return cls.objects.filter(location__id = id)
