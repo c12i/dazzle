@@ -10,7 +10,7 @@ def search(request):
     
     if request.method == "GET":
         search_term = request.GET.get("search")
-        searched_photos = Photo.objects.filter(name__icontains = search_term)
+        searched_photos = Photo.search_photo_by_category(search_term)
         results = len(searched_photos)
         message = "{}".format(search_term)
         

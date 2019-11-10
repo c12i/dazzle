@@ -36,7 +36,8 @@ class PhotoTestClass(TestCase):
         self.assertEqual(photo, self.photo)
 
     def test_search_photo_by_category(self):
-        pass
+        photos = Photo.search_photo_by_category("Test")
+        self.assertFalse(len(photos) > 0)
 
     def test_filter_by_location(self):
         pass
