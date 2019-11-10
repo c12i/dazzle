@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     color: #333;
     font-family: 'Lateef', cursive;
@@ -32,6 +36,26 @@ span .badge{
     background-color: #333;
     opacity: 0.79;
 }
+
+.backtop{
+   position: fixed; 
+   width: 50px;
+   background: #333;
+   bottom: 40px;
+   right: 20px;
+   opacity: 0.5;
+
+   text-decoration: none;
+   text-align: center;
+   line-height: 50px;
+   font-size: 22px;
+}
+
+.backtop a{
+    color: #fff;
+}
+
+
 
 hr.style-one {
     border: 0;
