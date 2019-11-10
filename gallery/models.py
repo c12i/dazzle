@@ -1,5 +1,6 @@
 from django.db import models
 import pyperclip
+import random
 
 # Create your models here.
 
@@ -73,6 +74,18 @@ class Photo(models.Model):
         A method to return all photos posted in order of the most recent to oldest
         """
         return cls.objects.order_by("post_date")[::-1]
+
+    
+    @classmethod
+    def show_random_photo(cls):
+        """
+        A method which returns a random photo
+        """
+        all_photos = cls.show_all_photos()
+        random_id = random.randint(1, len(all_photos))
+
+        return cls.objects.get(id = random_id)
+
 
     
     @classmethod
