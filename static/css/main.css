@@ -7,6 +7,10 @@ body{
     font-family: 'Lateef', cursive;
 }
 
+.jumbotron{
+    background: #fff;
+}
+
 .list-inline-item > a{
     color: #333;
 }

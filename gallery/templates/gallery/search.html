@@ -1,0 +1,40 @@
+{%extends "gallery/base.html"%}
+
+{%block content%}
+<div class="jumbotron" style="height: 80px; padding-top:20px">
+    <div class="container">
+        {%if results == 1%}
+        <h1>{{results}} result for {{message}}</h1>
+        {%else%}
+        <h1>{{results}} results for {{message}}</h1>
+        {%endif%}
+    </div>
+</div>
+
+<section class="gallery-block compact-gallery">
+    <div class="container">
+        <div class="row no-gutters">
+            {%for photo in photos%}
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a class="lightbox" href="{{photo.image.url}}" data-caption="{{photo.name}}">
+                    <img class="img-fluid image" src="{{photo.image.url}}">
+                    <span class="description">
+                        <span class="description-heading">{{photo.name}}</span>
+                        <span class="description-body">{{photo.description}}</span>
+                        <div style="display: flex;">
+                            <p class="description-body"><span class="badge">
+                                    <i class="fas fa-map-marker-alt"></i> {{photo.location.city}},
+                                    {{photo.location.country}}
+                                </span></p>
+                            <span id="photo{{photo.id}}" hidden>http://127.0.0.1:8000{{photo.image.url}}</span>
+                            <button onclick="copyToClipboard('photo{{photo.id}}')" class="btn no-border text-white"><i
+                                    class="far fa-copy"></i></button>
+                        </div>
+                    </span>
+                </a>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</section>
+{%endblock%}
