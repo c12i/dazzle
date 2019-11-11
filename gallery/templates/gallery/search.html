@@ -25,7 +25,7 @@
                                     <i class="fas fa-map-marker-alt"></i> {{photo.location.city}},
                                     {{photo.location.country}}
                                 </span></p>
-                            <span id="photo{{photo.id}}" hidden>http://127.0.0.1:8000{{photo.image.url}}</span>
+                            <span id="photo{{photo.id}}" hidden>https://dazzle100.herokuapp.com/{{photo.image.url}}</span>
                             <button onclick="copyToClipboard('photo{{photo.id}}')" class="btn no-border text-white"><i
                                     class="far fa-copy"></i></button>
                         </div>
