@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7yk(0xuud*f0g!kr+u9m6mb_w32_$ao)oa!km(agmf@=av^(+$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["dazzle100.herokuapp.com"]
 
