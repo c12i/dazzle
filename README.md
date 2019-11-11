@@ -16,11 +16,11 @@
 
 ![alt text](screencaps/daz2.gif)
 
-![alt text](screencaps/d1.gif)
+![alt text](screencaps/d1.png)
 
-![alt text](screencaps/d2.gif)
+![alt text](screencaps/d2.png)
 
-![alt text](screencaps/d3.gif)
+![alt text](screencaps/d3.png)
 
 ## Author
 [Collins Muriuki](https://github.com/collinsmuriuki), 26/10/2019.
