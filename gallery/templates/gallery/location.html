@@ -30,7 +30,7 @@
                         {%for photo in photos%}
                         <div class="col-md-6 item zoom-on-hover">
                             <a class="lightbox" href="{{photo.image.url}}" data-caption="{{photo.name}}: {{photo.description}}">
-                                <img class="img-fluid image" src="{{photo.image.url}}">
+                                <img class="img-fluid image" src="{{photo.image.cdn_url}}">
                                 <span class="description">
                                     <span class="description-heading">{{photo.name}}</span>
                                     <span class="description-body">{{photo.description}}</span>
@@ -40,7 +40,7 @@
                                                 {{photo.location.country}}
                                             </span></p>
                                         <span id="photo{{photo.id}}"
-                                            hidden>https://dazzle100.herokuapp.com{{photo.image.url}}</span>
+                                            hidden>{{photo.image.cdn_url}}</span>
                                         <button onclick="copyToClipboard('photo{{photo.id}}')"
                                             class="btn no-border text-white"><i class="far fa-copy"></i></button>
                                     </div>

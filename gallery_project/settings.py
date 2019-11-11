@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["dazzle100.herokuapp.com"]
 # Application definition
 
 INSTALLED_APPS = [
+    'pyuploadcare.dj',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -71,6 +72,11 @@ TEMPLATES = [
         },
     },
 ]
+
+UPLOADCARE = {
+    'pub_key': 'ef2a4dc742a424862dd6',
+    'secret': 'e4649268feb892e64b4c',
+}
 
 WSGI_APPLICATION = 'gallery_project.wsgi.application'
 
