@@ -18,6 +18,7 @@ psycopg2-binary==2.8.4
 pylint==2.4.3
 pyperclip==1.7.0
 python-dateutil==2.8.1
+python-decouple==3.1
 pytz==2019.3
 pyuploadcare==2.6.0
 requests==2.22.0
