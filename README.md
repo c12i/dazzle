@@ -54,7 +54,7 @@ Here is a run through of how to set up the application:
     * **`source venv/bin/activate`**
         * Note that you can exit the virtual environment by running the command **`deactivate`**
 * **Step 4** : Download the all dependencies in the requirements.txt using **`pip install -r requirements.txt`**
-* **Step 5** : You can now launch the application locally by running the command **`python manage.py runserver`** and copying the lonk given on the termnal on your browser.
+* **Step 5** : You can now launch the application locally by running the command **`python manage.py runserver`** and copying the link given on the termnal on your browser.
     * To post photos, run the command  **`python manage.py createsuperuser`** to create an admin account in order to post. Access to the admin panel is by adding the path /admin to the address bar.
 
 
