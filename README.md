@@ -4,7 +4,7 @@
 
 ## User Story
 * User can view all photos on index page ordered by the date they were posted
-* Hovering on an image will reveal more information about it; the title, description, locaion and time posted.
+* Hovering on an image will reveal more information about it; the title, description, location and time posted.
 * User can click on the copy button on an image to copy its url for sharing purposes
 * Clicking an image will toggle a lightbox with an expanded view of the image
 * User can navigate to other images while on the lightbox view.
