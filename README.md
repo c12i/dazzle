@@ -4,7 +4,7 @@
 
 ## User Story
 * User can view all photos on index page ordered by the date they were posted
-* Hovering on an image will reveal more information about it; the title, description, locaion and time posted.
+* Hovering on an image will reveal more information about it; the title, description, location and time posted.
 * User can click on the copy button on an image to copy its url for sharing purposes
 * Clicking an image will toggle a lightbox with an expanded view of the image
 * User can navigate to other images while on the lightbox view.
@@ -39,9 +39,9 @@ A photo gallery web application made using Django.
     * **`pip install django==1.11.23`**
 * This project requires you to have a secret key from Uploadcare to facilitate cloud storage of uploaded images.
     * The secret key can be gotten by creating a free uploadcare account, starting a new project and navigating to the dashboard
-    * The key should be stored as an enviremnetal variable in an .env file as hown below
+    * The key should be stored as an environmental variable in an .env file as shown below
         * **`SECRET=<your secret key here>`**
-    * More info onhow to use the Django pyuploadcare library can be found [here](https://uploadcare.com/docs/guides/django/)
+    * More info on how to use the Django pyuploadcare library can be found [here](https://uploadcare.com/docs/guides/django/)
 
 ## Installation and Set-up
 To view the app, open the live site link provided below on the README.
